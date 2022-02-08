@@ -1,4 +1,5 @@
-document.querySelectorAll(".option").forEach(e => e.addEventListener('click', colorSelect))
+document.querySelector("#black-white").addEventListener('click', colorSelect)
+document.querySelector("#rainbow").addEventListener('click', colorSelect)
 function colorSelect(){
 
     let bwColor = getComputedStyle(this).getPropertyValue('background-color')
